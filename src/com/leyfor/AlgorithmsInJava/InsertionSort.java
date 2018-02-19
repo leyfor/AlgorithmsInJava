@@ -25,18 +25,18 @@ public class InsertionSort {
             int i;
 
             // Compares the elements at each position( index) of the array
-            for (i = firstUnsortedIndex; i > 0 && array[i - 1] > newElement; i = i - 1) {
+            for (i = firstUnsortedIndex; i > 0 && array[i - 1] > newElement; i--) {
                 // i > 0 && array[i - 1] > newElement; mean:
-                // i > 0 : means we've not reach index 0(which is assumed as sorted array)
-                // array[i - 1]: means checking from right to left
-                // > newElement: means should continue to move left as long as element i is greater than new element
+                // i > 0 : means we've not reach index 0(which is the sorted part of the array)
+                // array[i - 1]: means checking from right to left element of the array
+                // > newElement: means should continue to move left as long as element @ index i is greater than new element
                 // newElement must be smaller than the element at index - 1 of its position...
 
                 //swap the new element with the element at position index - 1
                 array[i] = array[i - 1];
 
             }
-            array[i - 1] = newElement;
+            array[i] = newElement;
 
         }
         this._selectionSort.display(array);

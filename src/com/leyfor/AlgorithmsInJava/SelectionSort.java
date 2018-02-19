@@ -40,7 +40,8 @@ public class SelectionSort {
 
     //Display the elements to the console
     protected void display(int[] intArray) {
-        for (int elem : intArray) {
+        for (int elem : intArray)
+        {
             System.out.print(elem + ", ");
         }
     }
