@@ -1,10 +1,15 @@
 package com.leyfor.AlgorithmsInJava;
 
-// Selection sort is an unstable sort
+// Selection sort is an UNSTABLE sort
 // cuadratic O(n2)
 public class SelectionSort {
 
+    public SelectionSort() {
+
+    }
+
     public SelectionSort(int[] intArray) {
+        System.out.println("Selection Sort");
         this._initialize(intArray);
 
     }
@@ -30,13 +35,13 @@ public class SelectionSort {
             this._swap(intArray, largest, lastUnsortedIndex);
         }
 
-        this._display(intArray);
+        this.display(intArray);
     }
 
     //Display the elements to the console
-    private void _display(int[] intArray) {
+    protected void display(int[] intArray) {
         for (int elem : intArray) {
-            System.out.println(elem);
+            System.out.print(elem + ", ");
         }
     }
 }
