@@ -7,5 +7,7 @@ public class Main {
 
         SelectionSort selectionSort = new SelectionSort(intArray);
         InsertionSort insertionSort = new InsertionSort(intArray);
+        ShellSort shellSort = new ShellSort(intArray);
+        Recursion recursion = new Recursion(5);
     }
 }
