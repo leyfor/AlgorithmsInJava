@@ -9,5 +9,7 @@ public class Main {
         InsertionSort insertionSort = new InsertionSort(intArray);
         ShellSort shellSort = new ShellSort(intArray);
         Recursion recursion = new Recursion(5);
+        MergeSort mergeSort = new MergeSort();
+        mergeSort._mergeSort(intArray, 0, intArray.length);
     }
 }
