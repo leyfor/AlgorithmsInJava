@@ -2,9 +2,13 @@ package com.leyfor.AlgorithmsInJava;
 
 public class MergeSort {
 
-    public MergeSort() {
+    private SelectionSort _selectionSort  = new SelectionSort();
+
+    public MergeSort(int[] input, int start, int end) {
         System.out.println();
         System.out.println("MergeSort");
+        this._mergeSort( input, start, end);
+        this._selectionSort.display(input);
 
 
     }
@@ -22,6 +26,7 @@ public class MergeSort {
 
         // Now we _merge the arrays
        this._merge(input, start, mid, end);
+
 
     }
 
